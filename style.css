@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    user-select: none;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5) url('Asset/pexels-francesco-ungaro-998641.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+    color: white;
+}
+.box{
+    height: 10%;
+}
+
+.box h1 {
+    font-size: 50px;
+    font-weight: 200;
+}
+.put-Input{
+    margin-bottom: 50px;
+}
+.put-Input input{
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    background: transparent;
+    border: 1px solid gray;
+    margin-left: 10px;
+    filter: invert(1);
+}
+.timer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    gap: 100px;
+    border: 1px solid black;
+    padding: 0px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    margin: 10px 0px ;
+}
+.sub-timer {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.digit {
+    
+    font-size: 70px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.digit-name {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.control {
+    margin-top: 10px;
+}
+
+#start, #stop, #restart {
+    font-size: 15px;
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 200;
+    cursor: pointer;
+    background-color:transparent;
+    border: 1px solid gray;
+    color: white;
+}
+#start:hover, #stop:hover, #restart:hover{
+    background-color:black;
+    
+}
+
+@media (max-width: 1200px) {
+    .box h1 {
+        font-size: 40px;
+    }
+
+    .put-Input input {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+
+    .timer {
+        gap: 50px;
+        padding: 15px;
+    }
+    .sub-timer{
+        width: 75px;
+    }
+
+
+    .digit {
+        font-size: 60px;
+        width: 70px;
+    }
+
+    .digit-name {
+        font-size: 14px;
+    }
+
+    #start, #stop, #restart {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .box h1 {
+        font-size: 30px;
+    }
+
+    .put-Input input {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .timer {
+        gap: 30px;
+    }
+    .sub-timer{
+        width: 75px;
+    }
+
+    .digit {
+        font-size: 50px;
+        width: 60px;
+    }
+
+    .digit-name {
+        font-size: 12px;
+    }
+
+    #start, #stop, #restart {
+        padding: 8px 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .box h1 {
+        font-size: 24px;
+    }
+
+    .put-Input input {
+        font-size: 10px;
+        padding: 3px 5px;
+    }
+
+    .timer {
+        width: 90%;
+        gap: 30px;
+        padding: 10px;
+    }
+    .sub-timer{
+        width: 75px;
+    }
+
+
+    .digit {
+        font-size: 40px;
+        width: 50px;
+    }
+
+    .digit-name {
+        font-size: 10px;
+    }
+
+    #start, #stop, #restart {
+        padding: 6px 15px;
+        font-size: 10px;
+    }
+}
